@@ -1,0 +1,48 @@
+{
+  "rule_type": "GDPR",
+  "description": "General Data Protection Regulation compliance rules",
+  "rules": [
+    {
+      "id": "gdpr_001",
+      "name": "Personal Data Collection",
+      "description": "Check for personal data collection without consent",
+      "patterns": [
+        "personal data",
+        "personally identifiable",
+        "email address",
+        "phone number",
+        "social security",
+        "driver license"
+      ],
+      "severity": "HIGH",
+      "llm_prompt": "Analyze if this document describes collection of personal data without explicit consent mechanisms. Look for data collection practices, consent forms, and privacy notices."
+    },
+    {
+      "id": "gdpr_002", 
+      "name": "Right to Erasure",
+      "description": "Check for data deletion and right to be forgotten policies",
+      "patterns": [
+        "data deletion",
+        "right to erasure",
+        "data retention",
+        "delete personal data",
+        "forget me"
+      ],
+      "severity": "MEDIUM",
+      "llm_prompt": "Check if this document addresses users' right to data deletion and erasure as required by GDPR Article 17."
+    },
+    {
+      "id": "gdpr_003",
+      "name": "Data Breach Notification",
+      "description": "Check for data breach notification procedures",
+      "patterns": [
+        "data breach",
+        "security incident",
+        "notification within 72 hours",
+        "supervisory authority"
+      ],
+      "severity": "HIGH",
+      "llm_prompt": "Analyze if this document contains proper data breach notification procedures, including 72-hour notification requirements."
+    }
+  ]
+}

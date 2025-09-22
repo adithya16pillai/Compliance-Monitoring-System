@@ -1,0 +1,50 @@
+{
+  "rule_type": "HIPAA",
+  "description": "Health Insurance Portability and Accountability Act compliance rules",
+  "rules": [
+    {
+      "id": "hipaa_001",
+      "name": "Protected Health Information",
+      "description": "Check for PHI handling without proper safeguards",
+      "patterns": [
+        "protected health information",
+        "PHI",
+        "medical records",
+        "health data",
+        "patient information",
+        "diagnosis",
+        "treatment"
+      ],
+      "severity": "HIGH",
+      "llm_prompt": "Analyze if this document handles Protected Health Information (PHI) with appropriate safeguards, access controls, and privacy measures."
+    },
+    {
+      "id": "hipaa_002",
+      "name": "Business Associate Agreement",
+      "description": "Check for proper BAA requirements",
+      "patterns": [
+        "business associate",
+        "BAA",
+        "covered entity",
+        "third party access",
+        "vendor agreement"
+      ],
+      "severity": "MEDIUM",
+      "llm_prompt": "Check if this document addresses Business Associate Agreement requirements when third parties access PHI."
+    },
+    {
+      "id": "hipaa_003",
+      "name": "Minimum Necessary Rule",
+      "description": "Check for minimum necessary access controls",
+      "patterns": [
+        "minimum necessary",
+        "need to know",
+        "access control",
+        "role-based access",
+        "least privilege"
+      ],
+      "severity": "MEDIUM",
+      "llm_prompt": "Analyze if this document implements minimum necessary access controls for PHI as required by HIPAA."
+    }
+  ]
+}

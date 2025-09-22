@@ -1,0 +1,48 @@
+{
+  "rule_type": "SOX",
+  "description": "Sarbanes-Oxley Act compliance rules",
+  "rules": [
+    {
+      "id": "sox_001",
+      "name": "Internal Controls",
+      "description": "Check for adequate internal controls over financial reporting",
+      "patterns": [
+        "internal controls",
+        "financial reporting",
+        "segregation of duties",
+        "authorization controls",
+        "audit trail"
+      ],
+      "severity": "HIGH",
+      "llm_prompt": "Analyze if this document describes adequate internal controls over financial reporting, including segregation of duties and authorization procedures."
+    },
+    {
+      "id": "sox_002",
+      "name": "Document Retention",
+      "description": "Check for proper document retention policies",
+      "patterns": [
+        "document retention",
+        "record keeping",
+        "audit documentation",
+        "retention period",
+        "financial records"
+      ],
+      "severity": "MEDIUM",
+      "llm_prompt": "Check if this document addresses proper document retention periods for financial records as required by SOX."
+    },
+    {
+      "id": "sox_003",
+      "name": "Whistleblower Protection",
+      "description": "Check for whistleblower protection mechanisms",
+      "patterns": [
+        "whistleblower",
+        "anonymous reporting",
+        "retaliation protection",
+        "ethics hotline",
+        "complaint mechanism"
+      ],
+      "severity": "HIGH",
+      "llm_prompt": "Analyze if this document provides adequate whistleblower protection and anonymous reporting mechanisms."
+    }
+  ]
+}
