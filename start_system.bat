@@ -1,0 +1,19 @@
+@echo off
+echo Starting Compliance Monitoring System...
+echo.
+echo 1. Starting FastAPI backend server...
+start "FastAPI Server" cmd /k "cd /d "%~dp0" && python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+echo 2. Waiting for backend to start...
+timeout /t 5 /nobreak > nul
+
+echo 3. Starting Streamlit frontend...
+start "Streamlit UI" cmd /k "cd /d "%~dp0" && streamlit run ui/streamlit_app.py"
+
+echo.
+echo Both services are starting...
+echo - API Server: http://localhost:8000
+echo - Streamlit UI: http://localhost:8501
+echo.
+echo Press any key to exit...
+pause > nul

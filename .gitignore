@@ -1,0 +1,280 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables and sensitive configuration
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+*.env
+
+# API Keys and secrets
+secrets.py
+secrets.json
+config_secrets.py
+api_keys.py
+credentials.json
+service-account-key.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+compliance.db
+database.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Uploaded files and user data
+uploads/
+documents/
+user_uploads/
+temp_files/
+temporary/
+cache/
+
+# Logs
+logs/
+*.log
+*.log.*
+log/
+*.out
+*.err
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# celery beat schedule file
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Machine Learning / AI models
+models/
+*.model
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+checkpoints/
+trained_models/
+
+# Hugging Face cache
+.cache/
+transformers_cache/
+torch_cache/
+
+# ChromaDB vector database
+chroma_db/
+.chroma/
+vector_db/
+
+# Streamlit
+.streamlit/
+
+# FastAPI
+.fastapi/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Backup files
+*.bak
+*.backup
+*.old
+*~
+
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Security and compliance reports
+compliance_reports/
+security_scans/
+vulnerability_reports/
+audit_logs/
+security_logs/
+
+# API documentation (if contains sensitive info)
+api_docs_private/
+internal_docs/
+
+# Docker
+.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+k8s-secrets/
+*.secret.yaml
+*.secret.yml
+
+# Cloud provider credentials
+.aws/
+.azure/
+.gcp/
+gcloud-service-key.json
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Configuration files with sensitive data
+config.ini
+config.cfg
+settings.ini
+local_settings.py
+production_settings.py
+
+# SSL certificates and keys
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# Application specific
+# Add any other files specific to your compliance monitoring system
+compliance_cache/
+analysis_cache/
+processed_documents/
+user_sessions/
